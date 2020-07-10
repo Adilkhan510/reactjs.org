@@ -375,7 +375,7 @@ Pass an inline callback and an array of dependencies. `useCallback` will return 
 ### `useMemo` {#usememo}
 
 ```js
-const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
+const memoizedValue = useMemo(() => computeExpensiveValue((a, b), [a, b]);
 ```
 
 Returns a [memoized](https://en.wikipedia.org/wiki/Memoization) value.
